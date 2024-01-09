@@ -1,0 +1,41 @@
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calculater_for_Math_operation__add_mul_sub_dev_
+{
+    public class calculater
+    {
+        public void add(float x, float y)
+        {
+            float add = x + y;
+            float sub = x - y;
+            float mul = x * y;
+            float dev = x / y;
+            Console.WriteLine("additon =" + add);
+            Console.WriteLine("subtraction=" + sub);
+            Console.WriteLine("multiplication=" + mul);
+            Console.WriteLine("devision=" + dev);
+
+        }
+
+
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the first number:");
+            float fnum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number :");
+            float snum = Convert.ToInt32(Console.ReadLine());
+            calculater value = new calculater();
+            value.add(fnum,snum);
+            Console.ReadLine();
+
+
+        }
+    }
+}
